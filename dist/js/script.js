@@ -20258,7 +20258,9 @@ var data = [{"id":1,"title":"Fuke zisukje bu dibas sik.","description":"Jusola m
 
 $(document).ready(function(){
 	$(".modal").hide();
-	
+	data.forEach(function(e){
+		$(".navigator ul").append('<li><img src="../dist/img/'+ e.id + '.jpg"><a href="#">'+e.hashtag+'</a></li>');
+	})
 	data.filter(function(e,i){ //FILTRO PRIMERAS 20IMG
 		if(i< 20){
 		$(".contents").append('<div class="card_img"><img src="../dist/img/'+ e.id + '.jpg" ><h2 class="title">'+ e.title+'</h2><p class="description">'+		
@@ -20271,7 +20273,7 @@ $(document).ready(function(){
 	       		$(".contents").append('<div class="card_img"><img src="../dist/img/'+ e.id + '.jpg" class="imagen" ><h2 class="title">'+ e.title+'</h2><p class="description">'+		
 			e.description+'</p><span class="usuario">'+e.user.charAt()+'</span><h4>'+e.user+'</h4><span class="hashtag">#'+e.hashtag+'</span></div>');
 	       })
-	       $(".contents").css("height", "1000vh"); //AUMENTO ALTO DE PANTALLA PARA ACOMODAR LAS IMG A LA VENTANA
+	       $(".contents").css("height", "900vh"); //AUMENTO ALTO DE PANTALLA PARA ACOMODAR LAS IMG A LA VENTANA
 	   	}
 		});
 	})

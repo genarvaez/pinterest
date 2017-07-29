@@ -82,11 +82,16 @@ nav{
 		text-align: left;
 		width: 320px;
 		display: inline-block;
+		-webkit-transition: width 0.8s;
+		transition: bottom .8s;
 		img{
 			border-radius: 20px;
 			width: 300px;
 			padding: 10px;
 			margin: 0;
+		}
+		h2, .description{
+			padding: 10px;
 		}
 		.usuario, h4, .hashtag{
 			float: left;
@@ -97,7 +102,9 @@ nav{
 		}
 	}
 	.card_img:hover{
-		background-color: rgba(0, 0, 0, 0.1);
+		bottom: 100px;
+		box-shadow: 2px 15px 10px 2px #777;
+		border-radius: 10px;
 	}
 
 }

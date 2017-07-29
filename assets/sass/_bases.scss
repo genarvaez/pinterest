@@ -45,6 +45,13 @@ nav{
 		}
 	}
 }
+
+.navigator{
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 .contents{
 	text-align:center;
 	width: 100%;
@@ -67,17 +74,87 @@ nav{
 			margin: 10px;
 		}
 		.usuario{
-			background-color: #F6CECE;
-			text-align: center;
-			color: white;
-			font-weight: bolder;
-			border-radius: 100%;
-			padding: 5px;
-			width: 30px;
+			@include usuario;
 		}
 	}
 	.card_img:hover{
-		background-color: rgba(21, 21, 21, 0.2);
+		background-color: rgba(0, 0, 0, 0.1);
 	}
 
+}
+.modal{
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #d8d8d8;
+	z-index: 200;
+	overflow: scroll;
+	text-align: center;
+	.fa-times-circle-o{
+		position: absolute;
+		z-index: 300;
+		right: 30px;
+		top: 30px;
+		color: #BDBDBD;
+	}
+	.fa-times-circle-o:hover{
+		color: #585858;
+		cursor: pointer;		
+	}
+	
+	.modal-box{
+		text-align: left;
+		background-color: white;
+		width: 50%;
+		border-radius: 10px;
+		margin: 100px auto;
+		padding: 0 20px;
+		.save{
+			@include boton;
+			position: relative;
+			top: 10px;
+			right: 30px;
+			float: right;
+		}
+		.icons{
+			color: #BDBDBD;
+			font-size: 1.5em;
+			i{
+				margin: 10px;
+			}
+		}
+		.contenido{
+		img{
+			margin: 20px 0 20px 20px;;
+		}
+		.user{
+			display: flex;
+			align-items: center;
+			.usuario{
+				@include usuario;
+				font-size: 2.9em;
+				width: 70px;
+			}
+			.usuario, h4, .hashtag{
+				margin: 10px;
+			}
+		}
+		.description{
+			padding: 10px 30px 30px 0;
+		}
+		.read{
+			background-color: #D8D8D8;
+			color: grey;
+			border: none;
+			font-size: 1.4em;
+			padding: 5px;
+			border-radius: 5px;
+			margin-left: 496px;
+			margin-top: -10px;
+		}}
+		
+	}
 }

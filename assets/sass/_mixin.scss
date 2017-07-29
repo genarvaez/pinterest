@@ -1,0 +1,17 @@
+@mixin usuario{
+	background-color: #F6CECE;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	border-radius: 100%;
+	padding: 5px;
+	width: 30px;
+}
+@mixin boton{
+	background-color: #B40404;
+	border: none;
+	color: white;
+	padding: 5px;
+	font-size: 1.3em;
+	border-radius: 5px;
+}

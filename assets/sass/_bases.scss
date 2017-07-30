@@ -82,8 +82,9 @@ nav{
 		text-align: left;
 		width: 320px;
 		display: inline-block;
+		position: relative;
 		-webkit-transition: width 0.8s;
-		transition: bottom .8s;
+		transition: bottom 2s;
 		img{
 			border-radius: 20px;
 			width: 300px;
@@ -102,7 +103,7 @@ nav{
 		}
 	}
 	.card_img:hover{
-		bottom: 100px;
+		bottom: 50px;
 		box-shadow: 2px 15px 10px 2px #777;
 		border-radius: 10px;
 	}

@@ -58,6 +58,12 @@ nav{
 				border-radius: 5px;
 				margin: 10px;
 				filter: sepia(40%);
+				-webkit-transition: width 2s;
+				transition: bottom 2s;
+			}
+			img:hover{
+				width: 120px;
+				height: 60px;	
 			}
 			a{
 				text-decoration:none;
